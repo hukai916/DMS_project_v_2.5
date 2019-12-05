@@ -1,0 +1,38 @@
+## This file stores the essential configuration information required for DMS analysis:
+
+# 1. NGS raw data:
+# 	a. If data stored in NCBI, please provide tab separated SRR IDs.
+#	b. If data stored locally, please provide full paths to the files.
+#	Note that data files must be put in the order of "Experiment" and "Input", there can be multiple "Experiment" and the last ones must be from "Input".
+# 2. WT template sequence:
+#	Provide full path to the WT genomic template file, must be in fasta format.
+# 3. Amplicon locations:
+#	Provide start and end coordinate (DNA) for PCR amplicons.
+#	Put comma-separated coordinate pair inside parenthesis for each amplicon.
+#	If multiple amplicons, separate them by white space.
+# 4. Mutation coordinates in WT template:
+#       Provide target mutation coordinates (DNA).
+#	Coordinates from the same amplicon must be put inside parenthesis and be separated by comma.
+#	If there is only one coordinate in certain amplicon, also insert an extra comma. 
+# 	If multiple amplicons, separate them by white space.
+# 5. Experimental conditions: 
+#	Provide the assay names, the order must match the data order specified in 1.
+
+
+**********BELOW are configurations for example_job1**********
+
+NGS raw data(if NCBI): NA
+NGS raw data(if local): 
+Seq_file1: /Users/Kai/Desktop/GitHub/DMS_project_v_2.5/raw_data_example/AuF-Pool3/BA02-AuF-Pool3-40_R1_001.fastq
+Seq_file2: /Users/Kai/Desktop/GitHub/DMS_project_v_2.5/raw_data_example/AuF-Pool3/BA02-AuF-Pool3-40_R2_001.fastq
+Seq_file3(lib): /Users/Kai/Desktop/GitHub/DMS_project_v_2.5/raw_data_example/AuF-Pool3/BA01-AuF-Pool3-28_R1_001.fastq
+Seq_file4(lib): /Users/Kai/Desktop/GitHub/DMS_project_v_2.5/raw_data_example/AuF-Pool3/BA01-AuF-Pool3-28_R2_001.fastq
+
+WT template sequence: /Users/Kai/Desktop/GitHub/DMS_project_v_2.5/ref_example/AuF.fa
+
+Amplicon locations: (779,1191)
+
+Mutation coordinates in WT template: (928,964,1000,1006)
+
+Experimental conditions: AuF_40_Pool3 AuF_28_Pool3
+

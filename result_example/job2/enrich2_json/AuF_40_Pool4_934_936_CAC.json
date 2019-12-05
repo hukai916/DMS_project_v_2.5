@@ -1,0 +1,42 @@
+{
+    "libraries": [
+        {
+            "fastq": {
+                "filters": {},
+                "reads": "/Users/Kai/Desktop/GitHub/DMS_project_v_2.5/enrich2_input/AuF_28_Pool4_934_936_CAC.fastq",
+                "reverse": false
+            },
+            "name": "AuF_28_Pool4",
+            "report filtered reads": false,
+            "timepoint": 0,
+            "variants": {
+                "use aligner": false,
+                "wild type": {
+                    "coding": true,
+                    "reference offset": 0,
+                    "sequence": "CAC"
+                }
+            }
+        },
+        {
+            "fastq": {
+                "filters": {},
+                "reads": "/Users/Kai/Desktop/GitHub/DMS_project_v_2.5/enrich2_input/AuF_40_Pool4_934_936_CAC.fastq",
+                "reverse": false
+            },
+            "name": "AuF_40_Pool4",
+            "report filtered reads": false,
+            "timepoint": 1,
+            "variants": {
+                "use aligner": false,
+                "wild type": {
+                    "coding": true,
+                    "reference offset": 0,
+                    "sequence": "CAC"
+                }
+            }
+        }
+    ],
+    "name": "AuF_40_Pool4",
+    "output directory": ""
+}

@@ -1,0 +1,37 @@
+	c_0	c_1
+_wt	1254.0	16577.0
+c.1T>A (p.Trp1Arg)	647.0	1.0
+c.1T>A (p.Trp1Asn), c.2G>A (p.Trp1Asn), c.3G>C (p.Trp1Asn)	511.0	1.0
+c.1T>A (p.Trp1Ile), c.2G>T (p.Trp1Ile), c.3G>C (p.Trp1Ile)	267.0	1.0
+c.1T>A (p.Trp1Lys), c.2G>A (p.Trp1Lys)	526.0	1.0
+c.1T>A (p.Trp1Met), c.2G>T (p.Trp1Met)	630.0	1.0
+c.1T>A (p.Trp1Ser), c.3G>C (p.Trp1Ser)	557.0	1.0
+c.1T>A (p.Trp1Thr), c.2G>C (p.Trp1Thr)	408.0	1.0
+c.1T>A (p.Trp1Thr), c.2G>C (p.Trp1Thr), c.3G>C (p.Trp1Thr)	174.0	1.0
+c.1T>C (p.Trp1Arg)	305.0	2.0
+c.1T>C (p.Trp1Arg), c.3G>C (p.Trp1Arg)	145.0	1.0
+c.1T>C (p.Trp1Gln), c.2G>A (p.Trp1Gln)	440.0	1.0
+c.1T>C (p.Trp1His), c.2G>A (p.Trp1His), c.3G>C (p.Trp1His)	95.0	1.0
+c.1T>C (p.Trp1Leu), c.2G>T (p.Trp1Leu)	111.0	1.0
+c.1T>C (p.Trp1Leu), c.2G>T (p.Trp1Leu), c.3G>C (p.Trp1Leu)	112.0	1.0
+c.1T>C (p.Trp1Pro), c.2G>C (p.Trp1Pro)	277.0	1.0
+c.1T>C (p.Trp1Pro), c.2G>C (p.Trp1Pro), c.3G>C (p.Trp1Pro)	76.0	1.0
+c.1T>G (p.Trp1Ala), c.2G>C (p.Trp1Ala)	298.0	1.0
+c.1T>G (p.Trp1Ala), c.2G>C (p.Trp1Ala), c.3G>C (p.Trp1Ala)	366.0	1.0
+c.1T>G (p.Trp1Asp), c.2G>A (p.Trp1Asp), c.3G>C (p.Trp1Asp)	352.0	1.0
+c.1T>G (p.Trp1Asp), c.2G>A (p.Trp1Asp), c.3G>T (p.Trp1Asp)	1.0	NA
+c.1T>G (p.Trp1Glu), c.2G>A (p.Trp1Glu)	584.0	1.0
+c.1T>G (p.Trp1Gly)	1199.0	1.0
+c.1T>G (p.Trp1Gly), c.3G>C (p.Trp1Gly)	923.0	1.0
+c.1T>G (p.Trp1Val), c.2G>T (p.Trp1Val)	972.0	1.0
+c.1T>G (p.Trp1Val), c.2G>T (p.Trp1Val), c.3G>C (p.Trp1Val)	228.0	1.0
+c.2G>A (p.Trp1Ter)	275.0	5.0
+c.2G>A (p.Trp1Ter), c.3G>A (p.Trp1Ter)	1.0	NA
+c.2G>A (p.Trp1Tyr), c.3G>C (p.Trp1Tyr)	713.0	1.0
+c.2G>C (p.Trp1Ser)	371.0	1.0
+c.2G>C (p.Trp1Ser), c.3G>C (p.Trp1Ser)	141.0	1.0
+c.2G>T (p.Trp1Leu)	618.0	1.0
+c.2G>T (p.Trp1Phe), c.3G>C (p.Trp1Phe)	118.0	2.0
+c.3G>A (p.Trp1Ter)	NA	4.0
+c.3G>C (p.Trp1Cys)	473.0	1.0
+c.3G>T (p.Trp1Cys)	1.0	1.0
