@@ -10,6 +10,9 @@ For trouble shooting, go to script/troubleshooting.txt file.
 ## Setup
 First need to install the required packages and configure the environment by running the setup.sh. <br>
 You must have Anaconda3 installed first if you haven't done so. <br>
+For best reproducibility, try to use conda 4.7.12, which can be found here: <br>
+https://drive.google.com/file/d/1JyetMHr8USOZCj_IeLh1fmupu1DnsRwt/view?usp=sharing <br>
+
 Download and unzip the git folder, open terminal, then: <br>
 **cd scripts/** <br>
 **bash setup.sh** <br>
@@ -18,7 +21,10 @@ It will take several minutes to install all components. <br>
 ## GUI approach
 After setup, do: <br>
 **bash gui.sh** <br>
-The GUI is self-explanatory, simply choose wild type sequence, raw reads file and mutation sites. <br>
+The GUI is self-explanatory, simply choose wild type sequence, raw reads file and mutation sites and others. <br>
+
+Note that in version 2.5, a new "Masked sites in WT" feature was implemented where you can specify the intentional mutations (for primer design purposes) and treat them as WT so that queries harboring these mutations won't be filtered out by the program as sequences carrying unexpected mutations. <br>
+
 Enter and confirm 'Mode' and 'Scale'. Then, hit 'Submit'. It may take several minutes to finish depending on your computational power. <br>
 Note that the 'Assay name' can't contain "-". <br>
 
@@ -26,6 +32,7 @@ Note that the 'Assay name' can't contain "-". <br>
 To learn how to use this mode, execute below for detailed instructions: <br>
 **bash wrapper.sh -h** <br>
 Some config_example_job.txt files are provided in the main directory. <br>
+Instructions on how to prepare a config file can also be found at the top of example config files. <br>
 Note that the configuration file setup is slightly different from that in version_1.0 and 2.0. <br>
 
 # Result
