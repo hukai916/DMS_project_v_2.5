@@ -18,7 +18,10 @@
 # 5. Experimental conditions: 
 #	Provide the assay names, the order must match the data order specified in 1.
 # 6. WT masks: 
-	Provide coordinates (DNA) in WT that have been intentionally engineered to be not WT
+#	Provide coordinates (DNA) in WT that have been intentionally engineered (for primer design purposes) to be not WT. 
+#	Queries harboring intentional mutations in masked sites will not be treated as carrying unexpected mutations, thus won't be filtered out during QC steps.
+#	The format is coordinate-intended_variant: 123-A.
+# 	If multiple coordinates to mask, separate them by white space: 123-A 234-G.
 
 
 **********BELOW are configurations for example_job2**********
