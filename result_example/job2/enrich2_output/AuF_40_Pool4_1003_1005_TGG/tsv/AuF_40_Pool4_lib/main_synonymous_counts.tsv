@@ -1,8 +1,9 @@
 	count
-_wt	16577
-p.Trp1Ter	9
-p.Trp1Arg	4
-p.Trp1Leu	3
+_wt	30610
+p.Trp1Ter	14
+p.Trp1Arg	6
+p.Trp1Cys	5
+p.Trp1Leu	4
 p.Trp1Ser	3
 p.Trp1Pro	2
 p.Trp1Phe	2
@@ -10,7 +11,6 @@ p.Trp1Gly	2
 p.Trp1Val	2
 p.Trp1Thr	2
 p.Trp1Ala	2
-p.Trp1Cys	2
 p.Trp1Met	1
 p.Trp1Asp	1
 p.Trp1His	1

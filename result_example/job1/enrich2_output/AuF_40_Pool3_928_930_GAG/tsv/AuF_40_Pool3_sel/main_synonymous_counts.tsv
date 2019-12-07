@@ -1,7 +1,7 @@
 	c_0	c_1
-_wt	1090.0	18880.0
+_wt	1090.0	18893.0
 p.Glu1Ala	2145.0	3.0
-p.Glu1Arg	1273.0	3.0
+p.Glu1Arg	1274.0	3.0
 p.Glu1Asn	330.0	3.0
 p.Glu1Asp	836.0	2.0
 p.Glu1Cys	689.0	1.0
@@ -11,7 +11,7 @@ p.Glu1His	1.0	1.0
 p.Glu1Ile	119.0	1.0
 p.Glu1Leu	875.0	4.0
 p.Glu1Lys	12.0	3.0
-p.Glu1Met	1428.0	2.0
+p.Glu1Met	1429.0	2.0
 p.Glu1Phe	267.0	1.0
 p.Glu1Pro	286.0	2.0
 p.Glu1Ser	1761.0	3.0
@@ -19,4 +19,4 @@ p.Glu1Ter	997.0	4.0
 p.Glu1Thr	943.0	2.0
 p.Glu1Trp	932.0	1.0
 p.Glu1Tyr	293.0	1.0
-p.Glu1Val	1978.0	7.0
+p.Glu1Val	1979.0	7.0

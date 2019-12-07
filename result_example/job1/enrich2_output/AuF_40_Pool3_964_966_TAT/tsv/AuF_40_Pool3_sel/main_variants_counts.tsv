@@ -1,6 +1,6 @@
 	c_0	c_1
-_wt	1090.0	18880.0
-c.1T>A (p.Tyr1Arg), c.2A>G (p.Tyr1Arg), c.3T>G (p.Tyr1Arg)	738.0	1.0
+_wt	1090.0	18893.0
+c.1T>A (p.Tyr1Arg), c.2A>G (p.Tyr1Arg), c.3T>G (p.Tyr1Arg)	739.0	1.0
 c.1T>A (p.Tyr1Asn), c.3T>C (p.Tyr1Asn)	248.0	2.0
 c.1T>A (p.Tyr1Ile), c.2A>T (p.Tyr1Ile), c.3T>C (p.Tyr1Ile)	833.0	1.0
 c.1T>A (p.Tyr1Lys), c.3T>G (p.Tyr1Lys)	371.0	1.0
@@ -22,15 +22,15 @@ c.1T>G (p.Tyr1Asp), c.3T>C (p.Tyr1Asp)	651.0	1.0
 c.1T>G (p.Tyr1Glu), c.3T>G (p.Tyr1Glu)	953.0	1.0
 c.1T>G (p.Tyr1Gly), c.2A>G (p.Tyr1Gly), c.3T>C (p.Tyr1Gly)	1222.0	1.0
 c.1T>G (p.Tyr1Gly), c.2A>G (p.Tyr1Gly), c.3T>G (p.Tyr1Gly)	493.0	1.0
-c.1T>G (p.Tyr1Val), c.2A>T (p.Tyr1Val), c.3T>C (p.Tyr1Val)	471.0	1.0
+c.1T>G (p.Tyr1Val), c.2A>T (p.Tyr1Val), c.3T>C (p.Tyr1Val)	472.0	1.0
 c.1T>G (p.Tyr1Val), c.2A>T (p.Tyr1Val), c.3T>G (p.Tyr1Val)	683.0	1.0
 c.2A>C (p.Tyr1Ser), c.3T>C (p.Tyr1Ser)	221.0	1.0
 c.2A>C (p.Tyr1Ser), c.3T>G (p.Tyr1Ser)	311.0	1.0
 c.2A>G (p.Tyr1Cys)	1.0	2.0
-c.2A>G (p.Tyr1Cys), c.3T>C (p.Tyr1Cys)	258.0	6.0
+c.2A>G (p.Tyr1Cys), c.3T>C (p.Tyr1Cys)	259.0	6.0
 c.2A>G (p.Tyr1Trp), c.3T>G (p.Tyr1Trp)	188.0	1.0
 c.2A>T (p.Tyr1Leu), c.3T>G (p.Tyr1Leu)	575.0	1.0
 c.2A>T (p.Tyr1Phe)	2.0	1.0
-c.2A>T (p.Tyr1Phe), c.3T>C (p.Tyr1Phe)	833.0	3.0
-c.3T>C (p.=)	827.0	21020.0
+c.2A>T (p.Tyr1Phe), c.3T>C (p.Tyr1Phe)	834.0	3.0
+c.3T>C (p.=)	827.0	21022.0
 c.3T>G (p.Tyr1Ter)	651.0	1.0

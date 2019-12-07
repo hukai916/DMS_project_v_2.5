@@ -1,6 +1,6 @@
 	c_0	c_1
-_wt	1090.0	18880.0
-c.1G>A (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3C>G (p.Asp1Arg)	601.0	2447.0
+_wt	1090.0	18893.0
+c.1G>A (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3C>G (p.Asp1Arg)	601.0	2448.0
 c.1G>A (p.Asp1Asn)	177.0	2.0
 c.1G>A (p.Asp1Ile), c.2A>T (p.Asp1Ile)	235.0	230.0
 c.1G>A (p.Asp1Lys), c.3C>G (p.Asp1Lys)	517.0	3.0
@@ -23,7 +23,7 @@ c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser)	159.0	976.0
 c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser), c.3C>G (p.Asp1Ser)	367.0	399.0
 c.1G>T (p.Asp1Ter), c.3C>G (p.Asp1Ter)	1277.0	2.0
 c.1G>T (p.Asp1Trp), c.2A>G (p.Asp1Trp), c.3C>G (p.Asp1Trp)	904.0	193.0
-c.1G>T (p.Asp1Tyr)	221.0	37.0
+c.1G>T (p.Asp1Tyr)	222.0	37.0
 c.2A>C (p.Asp1Ala)	25.0	37.0
 c.2A>C (p.Asp1Ala), c.3C>G (p.Asp1Ala)	279.0	311.0
 c.2A>G (p.Asp1Gly)	848.0	18.0

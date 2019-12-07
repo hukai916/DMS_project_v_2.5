@@ -1,33 +1,33 @@
 	c_0	c_1
-_wt	1254.0	16577.0
-c.1C>A (p.His1Arg), c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	1.0	1.0
-c.1C>A (p.His1Asn)	1.0	1.0
-c.1C>A (p.His1Ile), c.2A>T (p.His1Ile)	1.0	1.0
-c.1C>A (p.His1Lys), c.3C>G (p.His1Lys)	1.0	1.0
-c.1C>A (p.His1Met), c.2A>T (p.His1Met), c.3C>G (p.His1Met)	1.0	1.0
-c.1C>A (p.His1Ser), c.2A>G (p.His1Ser)	1.0	1.0
-c.1C>A (p.His1Thr), c.2A>C (p.His1Thr)	1.0	1.0
+_wt	1389.0	30610.0
+c.1C>A (p.His1Arg), c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	884.0	1.0
+c.1C>A (p.His1Asn)	199.0	2.0
+c.1C>A (p.His1Ile), c.2A>T (p.His1Ile)	120.0	1.0
+c.1C>A (p.His1Lys), c.3C>G (p.His1Lys)	155.0	1.0
+c.1C>A (p.His1Met), c.2A>T (p.His1Met), c.3C>G (p.His1Met)	525.0	2.0
+c.1C>A (p.His1Ser), c.2A>G (p.His1Ser)	614.0	2.0
+c.1C>A (p.His1Thr), c.2A>C (p.His1Thr)	1003.0	4.0
 c.1C>A (p.His1Thr), c.2A>C (p.His1Thr), c.3C>G (p.His1Thr)	1.0	1.0
-c.1C>G (p.His1Ala), c.2A>C (p.His1Ala)	1.0	1.0
-c.1C>G (p.His1Ala), c.2A>C (p.His1Ala), c.3C>G (p.His1Ala)	1.0	1.0
-c.1C>G (p.His1Asp)	2.0	1.0
-c.1C>G (p.His1Glu), c.3C>G (p.His1Glu)	1.0	1.0
-c.1C>G (p.His1Gly), c.2A>G (p.His1Gly)	1.0	1.0
-c.1C>G (p.His1Gly), c.2A>G (p.His1Gly), c.3C>G (p.His1Gly)	1.0	1.0
-c.1C>G (p.His1Val), c.2A>T (p.His1Val)	1.0	1.0
-c.1C>G (p.His1Val), c.2A>T (p.His1Val), c.3C>G (p.His1Val)	1.0	1.0
-c.1C>T (p.His1Cys), c.2A>G (p.His1Cys)	1.0	1.0
+c.1C>G (p.His1Ala), c.2A>C (p.His1Ala)	155.0	3.0
+c.1C>G (p.His1Ala), c.2A>C (p.His1Ala), c.3C>G (p.His1Ala)	114.0	1.0
+c.1C>G (p.His1Asp)	494.0	1.0
+c.1C>G (p.His1Glu), c.3C>G (p.His1Glu)	897.0	1.0
+c.1C>G (p.His1Gly), c.2A>G (p.His1Gly)	720.0	2.0
+c.1C>G (p.His1Gly), c.2A>G (p.His1Gly), c.3C>G (p.His1Gly)	957.0	2.0
+c.1C>G (p.His1Val), c.2A>T (p.His1Val)	775.0	4.0
+c.1C>G (p.His1Val), c.2A>T (p.His1Val), c.3C>G (p.His1Val)	952.0	4.0
+c.1C>T (p.His1Cys), c.2A>G (p.His1Cys)	762.0	2.0
 c.1C>T (p.His1Leu), c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	1.0	1.0
-c.1C>T (p.His1Phe), c.2A>T (p.His1Phe)	1.0	1.0
-c.1C>T (p.His1Ser), c.2A>C (p.His1Ser)	1.0	1.0
-c.1C>T (p.His1Ser), c.2A>C (p.His1Ser), c.3C>G (p.His1Ser)	1.0	1.0
-c.1C>T (p.His1Ter), c.3C>G (p.His1Ter)	2.0	1.0
-c.1C>T (p.His1Trp), c.2A>G (p.His1Trp), c.3C>G (p.His1Trp)	1.0	1.0
-c.1C>T (p.His1Tyr)	1.0	2.0
-c.2A>C (p.His1Pro)	2.0	2.0
+c.1C>T (p.His1Phe), c.2A>T (p.His1Phe)	248.0	128.0
+c.1C>T (p.His1Ser), c.2A>C (p.His1Ser)	243.0	1.0
+c.1C>T (p.His1Ser), c.2A>C (p.His1Ser), c.3C>G (p.His1Ser)	178.0	2.0
+c.1C>T (p.His1Ter), c.3C>G (p.His1Ter)	733.0	1.0
+c.1C>T (p.His1Trp), c.2A>G (p.His1Trp), c.3C>G (p.His1Trp)	686.0	2.0
+c.1C>T (p.His1Tyr)	368.0	3.0
+c.2A>C (p.His1Pro)	2.0	3.0
 c.2A>C (p.His1Pro), c.3C>G (p.His1Pro)	1.0	1.0
-c.2A>G (p.His1Arg)	1.0	4.0
+c.2A>G (p.His1Arg)	242.0	5.0
 c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	1.0	1.0
-c.2A>T (p.His1Leu)	1.0	1.0
-c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	1.0	1.0
-c.3C>G (p.His1Gln)	1.0	1.0
+c.2A>T (p.His1Leu)	159.0	2.0
+c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	499.0	2.0
+c.3C>G (p.His1Gln)	635.0	2.0

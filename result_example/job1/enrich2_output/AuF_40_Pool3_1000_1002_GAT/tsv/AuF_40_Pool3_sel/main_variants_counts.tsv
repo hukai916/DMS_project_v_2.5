@@ -1,34 +1,36 @@
 	c_0	c_1
-_wt	1090.0	18880.0
-c.1G>A (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>G (p.Asp1Arg)	1.0	1.0
-c.1G>A (p.Asp1Asn), c.3T>C (p.Asp1Asn)	1.0	1.0
+_wt	1090.0	18893.0
+c.1G>A (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>G (p.Asp1Arg)	1709.0	1.0
+c.1G>A (p.Asp1Asn)	1.0	1.0
+c.1G>A (p.Asp1Asn), c.3T>C (p.Asp1Asn)	3.0	1.0
 c.1G>A (p.Asp1Ile), c.2A>T (p.Asp1Ile), c.3T>C (p.Asp1Ile)	1.0	1.0
-c.1G>A (p.Asp1Lys), c.3T>G (p.Asp1Lys)	1.0	1.0
+c.1G>A (p.Asp1Lys), c.3T>G (p.Asp1Lys)	1554.0	1.0
 c.1G>A (p.Asp1Met), c.2A>T (p.Asp1Met), c.3T>G (p.Asp1Met)	1.0	1.0
-c.1G>A (p.Asp1Ser), c.2A>G (p.Asp1Ser), c.3T>C (p.Asp1Ser)	1.0	1.0
+c.1G>A (p.Asp1Ser), c.2A>G (p.Asp1Ser), c.3T>C (p.Asp1Ser)	77.0	1.0
 c.1G>A (p.Asp1Thr), c.2A>C (p.Asp1Thr), c.3T>C (p.Asp1Thr)	1.0	1.0
-c.1G>A (p.Asp1Thr), c.2A>C (p.Asp1Thr), c.3T>G (p.Asp1Thr)	1.0	1.0
-c.1G>C (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>C (p.Asp1Arg)	1.0	1.0
-c.1G>C (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>G (p.Asp1Arg)	1.0	1.0
-c.1G>C (p.Asp1Gln), c.3T>G (p.Asp1Gln)	1.0	1.0
-c.1G>C (p.Asp1His), c.3T>C (p.Asp1His)	1.0	1.0
-c.1G>C (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>C (p.Asp1Leu)	1.0	1.0
-c.1G>C (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>G (p.Asp1Leu)	1.0	1.0
-c.1G>C (p.Asp1Pro), c.2A>C (p.Asp1Pro), c.3T>C (p.Asp1Pro)	1.0	1.0
+c.1G>A (p.Asp1Thr), c.2A>C (p.Asp1Thr), c.3T>G (p.Asp1Thr)	703.0	1.0
+c.1G>C (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>C (p.Asp1Arg)	135.0	1.0
+c.1G>C (p.Asp1Arg), c.2A>G (p.Asp1Arg), c.3T>G (p.Asp1Arg)	839.0	1.0
+c.1G>C (p.Asp1Gln), c.3T>G (p.Asp1Gln)	1176.0	1.0
+c.1G>C (p.Asp1His)	1.0	1.0
+c.1G>C (p.Asp1His), c.3T>C (p.Asp1His)	242.0	1.0
+c.1G>C (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>C (p.Asp1Leu)	863.0	1.0
+c.1G>C (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>G (p.Asp1Leu)	615.0	1.0
+c.1G>C (p.Asp1Pro), c.2A>C (p.Asp1Pro), c.3T>C (p.Asp1Pro)	319.0	1.0
 c.1G>C (p.Asp1Pro), c.2A>C (p.Asp1Pro), c.3T>G (p.Asp1Pro)	1.0	1.0
-c.1G>T (p.Asp1Cys), c.2A>G (p.Asp1Cys), c.3T>C (p.Asp1Cys)	1.0	1.0
-c.1G>T (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>G (p.Asp1Leu)	1.0	1.0
-c.1G>T (p.Asp1Phe), c.2A>T (p.Asp1Phe), c.3T>C (p.Asp1Phe)	1.0	1.0
-c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser), c.3T>C (p.Asp1Ser)	1.0	1.0
-c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser), c.3T>G (p.Asp1Ser)	1.0	1.0
-c.1G>T (p.Asp1Ter), c.3T>G (p.Asp1Ter)	1.0	1.0
-c.1G>T (p.Asp1Trp), c.2A>G (p.Asp1Trp), c.3T>G (p.Asp1Trp)	1.0	1.0
-c.1G>T (p.Asp1Tyr), c.3T>C (p.Asp1Tyr)	1.0	1.0
-c.2A>C (p.Asp1Ala), c.3T>C (p.Asp1Ala)	1.0	1.0
-c.2A>C (p.Asp1Ala), c.3T>G (p.Asp1Ala)	1.0	1.0
-c.2A>G (p.Asp1Gly), c.3T>C (p.Asp1Gly)	1.0	1.0
-c.2A>G (p.Asp1Gly), c.3T>G (p.Asp1Gly)	1.0	1.0
-c.2A>T (p.Asp1Val), c.3T>C (p.Asp1Val)	1.0	1.0
-c.2A>T (p.Asp1Val), c.3T>G (p.Asp1Val)	1.0	1.0
-c.3T>C (p.=)	4.0	7.0
-c.3T>G (p.Asp1Glu)	1.0	1.0
+c.1G>T (p.Asp1Cys), c.2A>G (p.Asp1Cys), c.3T>C (p.Asp1Cys)	744.0	1.0
+c.1G>T (p.Asp1Leu), c.2A>T (p.Asp1Leu), c.3T>G (p.Asp1Leu)	334.0	1.0
+c.1G>T (p.Asp1Phe), c.2A>T (p.Asp1Phe), c.3T>C (p.Asp1Phe)	625.0	1.0
+c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser), c.3T>C (p.Asp1Ser)	172.0	1.0
+c.1G>T (p.Asp1Ser), c.2A>C (p.Asp1Ser), c.3T>G (p.Asp1Ser)	374.0	1.0
+c.1G>T (p.Asp1Ter), c.3T>G (p.Asp1Ter)	115.0	1.0
+c.1G>T (p.Asp1Trp), c.2A>G (p.Asp1Trp), c.3T>G (p.Asp1Trp)	2453.0	1.0
+c.1G>T (p.Asp1Tyr), c.3T>C (p.Asp1Tyr)	2.0	5.0
+c.2A>C (p.Asp1Ala), c.3T>C (p.Asp1Ala)	1305.0	1.0
+c.2A>C (p.Asp1Ala), c.3T>G (p.Asp1Ala)	881.0	1.0
+c.2A>G (p.Asp1Gly), c.3T>C (p.Asp1Gly)	1490.0	4.0
+c.2A>G (p.Asp1Gly), c.3T>G (p.Asp1Gly)	2185.0	1.0
+c.2A>T (p.Asp1Val), c.3T>C (p.Asp1Val)	1149.0	3.0
+c.2A>T (p.Asp1Val), c.3T>G (p.Asp1Val)	1311.0	1.0
+c.3T>C (p.=)	2078.0	20045.0
+c.3T>G (p.Asp1Glu)	53.0	3.0

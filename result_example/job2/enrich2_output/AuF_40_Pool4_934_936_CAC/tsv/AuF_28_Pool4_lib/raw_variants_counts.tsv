@@ -1,33 +1,34 @@
 	count
-_wt	1254
+_wt	1389
+c.1C>A (p.His1Thr), c.2A>C (p.His1Thr)	1003
+c.1C>G (p.His1Gly), c.2A>G (p.His1Gly), c.3C>G (p.His1Gly)	957
+c.1C>G (p.His1Val), c.2A>T (p.His1Val), c.3C>G (p.His1Val)	952
+c.1C>G (p.His1Glu), c.3C>G (p.His1Glu)	897
+c.1C>A (p.His1Arg), c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	884
+c.1C>G (p.His1Val), c.2A>T (p.His1Val)	775
+c.1C>T (p.His1Cys), c.2A>G (p.His1Cys)	762
+c.1C>T (p.His1Ter), c.3C>G (p.His1Ter)	733
+c.1C>G (p.His1Gly), c.2A>G (p.His1Gly)	720
+c.1C>T (p.His1Trp), c.2A>G (p.His1Trp), c.3C>G (p.His1Trp)	686
+c.3C>G (p.His1Gln)	635
+c.1C>A (p.His1Ser), c.2A>G (p.His1Ser)	614
+c.1C>A (p.His1Met), c.2A>T (p.His1Met), c.3C>G (p.His1Met)	525
+c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	499
+c.1C>G (p.His1Asp)	494
+c.1C>T (p.His1Tyr)	368
+c.1C>T (p.His1Phe), c.2A>T (p.His1Phe)	248
+c.1C>T (p.His1Ser), c.2A>C (p.His1Ser)	243
+c.2A>G (p.His1Arg)	242
+c.1C>A (p.His1Asn)	199
+c.1C>T (p.His1Ser), c.2A>C (p.His1Ser), c.3C>G (p.His1Ser)	178
+c.2A>T (p.His1Leu)	159
+c.1C>G (p.His1Ala), c.2A>C (p.His1Ala)	155
+c.1C>A (p.His1Lys), c.3C>G (p.His1Lys)	155
+c.1C>A (p.His1Ile), c.2A>T (p.His1Ile)	120
+c.1C>G (p.His1Ala), c.2A>C (p.His1Ala), c.3C>G (p.His1Ala)	114
 c.2A>C (p.His1Pro)	2
-c.1C>T (p.His1Ter), c.3C>G (p.His1Ter)	2
-c.1C>G (p.His1Asp)	2
-c.1C>G (p.His1Glu), c.3C>G (p.His1Glu)	1
-c.1C>G (p.His1Val), c.2A>T (p.His1Val), c.3C>G (p.His1Val)	1
-c.1C>T (p.His1Trp), c.2A>G (p.His1Trp), c.3C>G (p.His1Trp)	1
-c.1C>T (p.His1Leu), c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	1
-c.3C>G (p.His1Gln)	1
-c.1C>G (p.His1Val), c.2A>T (p.His1Val)	1
+c.1C>A (p.His1Ile), c.2A>T (p.His1Ile), c.3C>A (p.His1Ile)	2
 c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	1
 c.2A>C (p.His1Pro), c.3C>G (p.His1Pro)	1
-c.1C>T (p.His1Cys), c.2A>G (p.His1Cys)	1
-c.1C>G (p.His1Ala), c.2A>C (p.His1Ala)	1
-c.1C>G (p.His1Gly), c.2A>G (p.His1Gly)	1
-c.1C>T (p.His1Phe), c.2A>T (p.His1Phe)	1
-c.1C>G (p.His1Gly), c.2A>G (p.His1Gly), c.3C>G (p.His1Gly)	1
-c.2A>G (p.His1Arg)	1
-c.1C>G (p.His1Ala), c.2A>C (p.His1Ala), c.3C>G (p.His1Ala)	1
-c.1C>A (p.His1Asn)	1
-c.1C>A (p.His1Arg), c.2A>G (p.His1Arg), c.3C>G (p.His1Arg)	1
-c.1C>A (p.His1Ile), c.2A>T (p.His1Ile)	1
-c.1C>T (p.His1Ser), c.2A>C (p.His1Ser), c.3C>G (p.His1Ser)	1
-c.1C>T (p.His1Ser), c.2A>C (p.His1Ser)	1
-c.1C>T (p.His1Tyr)	1
-c.2A>T (p.His1Leu)	1
-c.1C>A (p.His1Lys), c.3C>G (p.His1Lys)	1
-c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	1
-c.1C>A (p.His1Met), c.2A>T (p.His1Met), c.3C>G (p.His1Met)	1
-c.1C>A (p.His1Thr), c.2A>C (p.His1Thr)	1
-c.1C>A (p.His1Ser), c.2A>G (p.His1Ser)	1
+c.1C>T (p.His1Leu), c.2A>T (p.His1Leu), c.3C>G (p.His1Leu)	1
 c.1C>A (p.His1Thr), c.2A>C (p.His1Thr), c.3C>G (p.His1Thr)	1
