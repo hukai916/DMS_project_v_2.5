@@ -210,7 +210,7 @@ def main():
     app  = App(root)
     root.mainloop()
 
-    if 1:
+    try:
         config = GuiParam(app.Dict)
         config.wtfile = Path(app.Dict['wt_file_button'])
 
@@ -254,7 +254,7 @@ def main():
                     wrapper.func_double_wrapper(param, workdir, scale = app.Dict['scale_entry'])
             except:
                 print("Incorrect information provided to GUI, re-try please.")
-    else:
+    except:
         print("Input format(s) incorrect! Please follow the input format examples and re-try.")
 
 
