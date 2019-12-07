@@ -17,6 +17,8 @@
 # 	If multiple amplicons, separate them by white space.
 # 5. Experimental conditions: 
 #	Provide the assay names, the order must match the data order specified in 1.
+# 6. WT masks: 
+	Provide coordinates (DNA) in WT that have been intentionally engineered to be not WT
 
 
 **********BELOW are configurations for example_job1**********
@@ -36,3 +38,4 @@ Mutation coordinates in WT template: (928,964,1000,1006)
 
 Experimental conditions: AuF_40_Pool3 AuF_28_Pool3
 
+WT masks: 999-G
