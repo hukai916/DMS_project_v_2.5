@@ -36,6 +36,9 @@ class ConfigParam(): # store the configuration paramters
                 self.amplicon = list(map(make_tuple, line.split("Amplicon locations:")[1].strip().split()))
             elif line.startswith("Mutation coordinates in WT template:"):
                 self.mut_pos  = list(map(make_tuple, line.split("Mutation coordinates in WT template:")[1].strip().split()))
+            elif line.startswith("WT masks:"):
+                self.wt_mask  = list(line.split("WT masks:")[1].strip().split())
+                self.wt_mask  = [[int(item.split('-')[0]), item.split('-')[1]] for item in self.wt_mask]
         self.mut_list = [item for subitem in self.mut_pos for item in subitem]
 
 def get_ngs_data_ncbi(param, folder_data_sra):
@@ -291,7 +294,7 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
     if not len(glob.glob(folder_enrich2_input.as_posix() + "/*.fastq")) == 0:
         print("Step6: formatted Enrich2_input files already in enrich2_input folder!")
     else:
-        try:
+        if 1:
             print("Step6: converting bam files into Enrich2 input format ...")
             folder_enrich2_input.mkdir(parents=True, exist_ok=True)
             for cond in param.condition:
@@ -334,15 +337,39 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
 
                 def which_mut_site(row, mut_pos):
                     which_mut_site = '*' # default is *
+
+                    set_mask = set()
+
+                    for item in param.wt_mask:
+                        try:
+                            query_position = row['Ref_pos'].index(item[0])
+                            if row['Query_seq'][query_position - 1] == item[1]: # why -1 would work?
+                                set_mask.add(item[0])
+                        except:
+                            pass
+
                     for i in range(len(mut_pos)): # control for amplicon
                         for pos in mut_pos[i]:
                             start, end = pos, pos + 2
                             set_real    = set(row['Mut_pos'])
                             set_design  = set(np.arange(start, end+1))
                             if set_real.union(set_design) == set_design and row['Which_amplicon'] == i + 1:
-                                if not len(set_real) == 0:
+                                if len(set_real) == 0:
+                                    which_mut_site = 'wt'
+                                    return which_mut_site
+                                else:
                                     which_mut_site = start
-                                else: which_mut_site = 'wt'
+                                    return which_mut_site
+
+                            if len(set_mask) > 0:
+                                if set_real.union(set_mask).union(set_design) == set_design.union(set_mask) and row['Which_amplicon'] == i + 1:
+                                    if set_real == set_mask:
+                                        which_mut_site = 'wt'
+                                        return which_mut_site
+                                    else:
+                                        which_mut_site = start
+                                        return which_mut_site
+
                     return(which_mut_site)
 
                 df['Which_amplicon'] = df.apply(which_amplicon, axis=1, amplicon_range_list=param.amplicon)
@@ -358,7 +385,6 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
                        # df_subset keeps only the sequences that have a single mutated aa at the specified site or wt.
                        # This, however, will also keep wt fragment that don't cover target mutation site. This can cause trouble.
                        # Use _fragment_filter to get rid of those fragments.
-
                         def _fragment_filter(row): # to remove fragments that don't cover mutation site
                             for pos in param.mut_pos[i]:
                                 if not pos in row['Ref_pos']:
@@ -383,7 +409,7 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
                         Path(enrich_infile_name).touch(exist_ok=True)
                         np.savetxt(enrich_infile_name, df_subset['Mut_seq_fastq'].values, fmt='%s')
                         # Should add one info to log.txt stating the number of reads that fall into each category.
-        except:
+        else:
             print("Step6: Enrich2 input preparation failed!")
             exit()
         print("Step6: Enrich2 input preparation succeeded!")
@@ -760,13 +786,36 @@ def bam2enrich_double_wrapper(param, folder_second_mapper, folder_enrich2_input)
 
                 def which_mut_site(row, mut_pos):
                     which_mut_site = '*' # default is *, if no more extra mutations, it will be set to the start position of designed site, else remains as *
+                    set_mask = set()
+                    for item in param.wt_mask:
+                        try:
+                            query_position = row['Ref_pos'].index(item[0])
+                            if row['Query_seq'][query_position - 1] == item[1]: # why -1 would work?
+                                set_mask.add(item[0])
+                        except:
+                            pass
+
                     for i in range(len(mut_pos)): # control for amplicon
                         set_design = set([mut_pos[0][0], mut_pos[0][0]+1, mut_pos[0][0]+2, mut_pos[0][1], mut_pos[0][1]+1, mut_pos[0][1]+2])
                         set_real   = set(row['Mut_pos'])
+
                         if set_real.union(set_design) == set_design and row['Which_amplicon'] == i + 1:
-                            if not len(set_real) == 0:
+                            if len(set_real) == 0:
+                                which_mut_site = 'wt'
+                                return which_mut_site
+                            else:
                                 which_mut_site = set_real
-                            else: which_mut_site = 'wt'
+                                return which_mut_site
+
+                        if len(set_mask) > 0:
+                            if set_real.union(set_mask).union(set_design) == set_design.union(set_mask) and row['Which_amplicon'] == i + 1:
+                                if set_real == set_mask:
+                                    which_mut_site = 'wt'
+                                    return which_mut_site
+                                else:
+                                    which_mut_site = set_real
+                                    return which_mut_site
+
                     return(which_mut_site)
 
                 df['Which_amplicon'] = df.apply(which_amplicon, axis=1, amplicon_range_list=param.amplicon)

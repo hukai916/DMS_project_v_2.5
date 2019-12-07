@@ -14,7 +14,7 @@ class App:
     def __init__(self, master):
         master.title("GUI wrapper")
         master.resizable(False, False)
-        master.geometry("520x560") # If using this, must import matplotlib
+        master.geometry("520x620") # If using this, must import matplotlib
         self.master = master
         self.Dict = dict({'wt_file_button': 'placeholder'})
 
@@ -144,28 +144,38 @@ class App:
         self.mutation_button.grid(row=20, column=3, rowspan=3)
         self.mutation_button.config(command=lambda: self.on_button(self.mutation_button, self.mutation_entry, 'mutation_entry'))
 
+        self.wt_mask_label = ttk.Label(self.master, text='Masked sites in WT \n(treat as WT)\nformat: 1-C XXX-G', width=15)
+        self.wt_mask_label.grid(row=24, column=0, rowspan=3)
+        self.wt_mask_default = tk.StringVar()
+        self.wt_mask_default.set('None')
+        self.wt_mask_entry = ttk.Entry(self.master, width=29)
+        self.wt_mask_entry.grid(row=24, column=1, rowspan=3, columnspan=2)
+        self.wt_mask_button = ttk.Button(self.master, text = 'confirm')
+        self.wt_mask_button.grid(row=24, column=3, rowspan=3)
+        self.wt_mask_button.config(command=lambda: self.on_button(self.wt_mask_button, self.wt_mask_entry, 'wt_mask_entry'))
+
         self.mode_label = ttk.Label(self.master, text='Mode (single or double, default is single): ', width=30)
-        self.mode_label.grid(row=24, column=0, rowspan=1, columnspan=2)
+        self.mode_label.grid(row=28, column=0, rowspan=1, columnspan=2)
         self.mode_default = tk.StringVar()
         self.mode_default.set('single')
         self.mode_entry = ttk.Entry(self.master, width=15, textvariable=self.mode_default)
-        self.mode_entry.grid(row=24, column=2, rowspan=1, columnspan=1)
+        self.mode_entry.grid(row=28, column=2, rowspan=1, columnspan=1)
         self.mode_button = ttk.Button(self.master, text = 'confirm')
-        self.mode_button.grid(row=24, column=3, rowspan=1)
+        self.mode_button.grid(row=28, column=3, rowspan=1)
         self.mode_button.config(command=lambda: self.on_button(self.mode_button, self.mode_entry, 'mode_entry'))
 
         self.scale_label = ttk.Label(self.master, text='Scale (Enrich2 range, default is max): ', width=30)
-        self.scale_label.grid(row=25, column=0, rowspan=1, columnspan=2)
+        self.scale_label.grid(row=29, column=0, rowspan=1, columnspan=2)
         self.scale_default = tk.StringVar()
         self.scale_default.set('max')
         self.scale_entry = ttk.Entry(self.master, width=15, textvariable=self.scale_default)
-        self.scale_entry.grid(row=25, column=2, rowspan=1, columnspan=1)
+        self.scale_entry.grid(row=29, column=2, rowspan=1, columnspan=1)
         self.scale_button = ttk.Button(self.master, text = 'confirm')
-        self.scale_button.grid(row=25, column=3, rowspan=1)
+        self.scale_button.grid(row=29, column=3, rowspan=1)
         self.scale_button.config(command=lambda: self.on_button(self.scale_button, self.scale_entry, 'scale_entry'))
 
         self.submit_button = ttk.Button(self.master, text='      Submit', width=10)
-        self.submit_button.grid(row=27, column=1, rowspan=1, columnspan=2)
+        self.submit_button.grid(row=30, column=1, rowspan=1, columnspan=2)
         self.submit_button.config(command=self.on_submit)
 
     def openfile(self, button, buttonname):
@@ -193,13 +203,14 @@ class GuiParam():
         self.amplicon  = []
         self.mut_list  = []
         self.mut_pos   = []
+        self.wt_mask   = []
 
 def main():
     root = tk.Tk()
     app  = App(root)
     root.mainloop()
 
-    try:
+    if 1:
         config = GuiParam(app.Dict)
         config.wtfile = Path(app.Dict['wt_file_button'])
 
@@ -214,6 +225,11 @@ def main():
             for key in app.Dict:
                 if key == item:
                     config.amplicon.append(tuple(map(int,app.Dict[key].split('-'))))
+
+        if not app.Dict['wt_mask_entry'] == 'None':
+            config.wt_mask = app.Dict['wt_mask_entry'].split()
+            config.wt_mask = [[int(item.split('-')[0]), item.split('-')[1]] for item in config.wt_mask]
+
         if not 'mutation_entry' in app.Dict:
             print("Not enough info provided to GUI, re-try please.")
         else:
@@ -229,6 +245,7 @@ def main():
 
                 workdir    = Path(Path.cwd()).parents[0]
                 param = config
+
                 Path(workdir.joinpath('TemFolder')).mkdir(parents=True, exist_ok=True) # create a temperate folder to contain tem files.
 
                 if app.Dict['mode_entry'] == 'single':
@@ -237,7 +254,7 @@ def main():
                     wrapper.func_double_wrapper(param, workdir, scale = app.Dict['scale_entry'])
             except:
                 print("Incorrect information provided to GUI, re-try please.")
-    except:
+    else:
         print("Input format(s) incorrect! Please follow the input format examples and re-try.")
 
 
