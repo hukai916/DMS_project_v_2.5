@@ -428,8 +428,8 @@ def enrich2_json_encoder_wrapper(param, folder_enrich2_json, folder_enrich2_inpu
         json_commandfile_name = folder_enrich2_json.joinpath("json.sh")
         json_commandfile_name.touch(exist_ok=True)
         json_commandfile = open(json_commandfile_name, 'w+')
-        json_commandfile.write("CONDA_BASE=$(conda info --base)\n")
-        json_commandfile.write("source $CONDA_BASE/etc/profile.d/conda.sh\n")
+        json_commandfile.write("source /*/*/opt/anaconda3/etc/profile.d/conda.sh\n")
+        json_commandfile.write("source /opt/anaconda3/etc/profile.d/conda.sh\n")
         json_commandfile.write("conda activate py2-dms\n")
         try:
             for cond in condition_list:

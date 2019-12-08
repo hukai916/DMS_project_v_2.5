@@ -186,8 +186,9 @@ def enrich2_count_wrapper(c0_t, c1_t, c0, c1):
                         folder_json_tem.as_posix().replace(' ', '\ ')])
 
     json_commandfile = open(folder_json_tem.joinpath('json.sh'), 'w+')
-    json_commandfile.write("CONDA_BASE=$(conda info --base)\n")
-    json_commandfile.write("source $CONDA_BASE/etc/profile.d/conda.sh\n")
+    json_commandfile.write("source /*/*/opt/anaconda3/etc/profile.d/conda.sh\n")
+    json_commandfile.write("source /opt/anaconda3/etc/profile.d/conda.sh\n")
+
     json_commandfile.write("conda activate py2-dms\n")
     json_commandfile.write(json_command)
     json_commandfile.close()

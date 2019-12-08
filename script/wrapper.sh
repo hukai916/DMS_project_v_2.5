@@ -1,5 +1,7 @@
-CONDA_BASE=$(conda info --base)
-source $CONDA_BASE/etc/profile.d/conda.sh
+# Make sure the correct conda 4.7.12 is source.
+source /*/*/opt/anaconda3/etc/profile.d/conda.sh
+source /opt/anaconda3/etc/profile.d/conda.sh
+
 conda activate py3-dms
 
 MODE=single
