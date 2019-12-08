@@ -294,7 +294,7 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
     if not len(glob.glob(folder_enrich2_input.as_posix() + "/*.fastq")) == 0:
         print("Step6: formatted Enrich2_input files already in enrich2_input folder!")
     else:
-        if 1:
+        try:
             print("Step6: converting bam files into Enrich2 input format ...")
             folder_enrich2_input.mkdir(parents=True, exist_ok=True)
             for cond in param.condition:
@@ -409,7 +409,7 @@ def bam2enrich_wrapper(param, folder_second_mapper, folder_enrich2_input):
                         Path(enrich_infile_name).touch(exist_ok=True)
                         np.savetxt(enrich_infile_name, df_subset['Mut_seq_fastq'].values, fmt='%s')
                         # Should add one info to log.txt stating the number of reads that fall into each category.
-        else:
+        except:
             print("Step6: Enrich2 input preparation failed!")
             exit()
         print("Step6: Enrich2 input preparation succeeded!")
@@ -428,7 +428,9 @@ def enrich2_json_encoder_wrapper(param, folder_enrich2_json, folder_enrich2_inpu
         json_commandfile_name = folder_enrich2_json.joinpath("json.sh")
         json_commandfile_name.touch(exist_ok=True)
         json_commandfile = open(json_commandfile_name, 'w+')
-        json_commandfile.write("source activate py2-dms\n")
+        json_commandfile.write("CONDA_BASE=$(conda info --base)\n")
+        json_commandfile.write("source $CONDA_BASE/etc/profile.d/conda.sh\n")
+        json_commandfile.write("conda activate py2-dms\n")
         try:
             for cond in condition_list:
                 for mut in param.mut_list:
