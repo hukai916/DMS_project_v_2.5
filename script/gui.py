@@ -226,7 +226,7 @@ def main():
                 if key == item:
                     config.amplicon.append(tuple(map(int,app.Dict[key].split('-'))))
 
-        if not app.Dict['wt_mask_entry'] == 'None':
+        if not app.Dict['wt_mask_entry'] == 'none':
             config.wt_mask = app.Dict['wt_mask_entry'].split()
             config.wt_mask = [[int(item.split('-')[0]), item.split('-')[1]] for item in config.wt_mask]
 
@@ -239,7 +239,7 @@ def main():
                 _mut_list = [x[0] for x in _mut_list]
                 _mut_tuple = [(x+',').replace(' ', ',') for x in _mut_list]
                 _mut_tuple = list(map(make_tuple, _mut_tuple))
-                mut_tuple = sorted(_mut_tuple, key=lambda item: item[0])
+                mut_tuple = _mut_tuple #sorted(_mut_tuple, key=lambda item: item[0])
                 config.mut_pos = mut_tuple
                 config.mut_list = [item for subtuple in mut_tuple for item in subtuple]
 
