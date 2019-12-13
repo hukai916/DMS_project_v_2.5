@@ -38,10 +38,13 @@ Note that the configuration file setup is slightly different from that in versio
 # Result
 Results will be saved in plot_output folder. <br>
 By default, 6 plots will be created: 3 are amino acid based and 3 are codon based. <br>
-The first plot is raw figure containing all amino acid/codon columns and standard error, the second and third are simplified version of raw figure with empty columns removed and/or standard error bar removed. <br>
-Sample output plots are provided in sample_plot_output folder. <br><br>
+The first plot is raw figure containing all amino acid/codon columns and standard error, the second is simplified version of raw figure with empty columns removed, the third is with empty columns and error bar both removed. <br>
+Sample output plots are provided in result_example/job/plot_output folder. <br><br>
 By default, all intermediate files will be kept, to free the space, save plot_output folder somewhere else for your own reference, then execute below to delete all intermediate files: <br>
 **bash folder_clean.sh** <br>
+Or, you can use the following command to move all intermediate files to result_example/job_X folder: <br>
+**bash folder_move.sh job_X** <br>
+Make sure to run folder_clean.sh to get rid of previous intermediate folders before running new jobs. <br>
 
 # Examples
 To repeat example_job1 and example_job2: <br>
