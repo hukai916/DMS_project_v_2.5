@@ -74,7 +74,7 @@ exit 1
 fi
 
 # Install Enrich2 under py2-dms environment
-wget https://github.com/hukai916/DMS_project_v_2.5/raw/master/Enrich2-master.zip
+# wget https://github.com/hukai916/DMS_project_v_2.5/raw/master/Enrich2-master.zip
 (unzip Enrich2-master.zip) && (rm Enrich2-master.zip)
 
 cp setup.py Enrich2-master/setup.py
