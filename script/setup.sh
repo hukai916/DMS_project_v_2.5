@@ -77,9 +77,9 @@ fi
 # wget https://github.com/hukai916/DMS_project_v_2.5/raw/master/Enrich2-master.zip
 unzip ../Enrich2-master.zip
 
-cp setup.py ../Enrich2-master/setup.py
+cp setup.py Enrich2-master/setup.py
 
-cd ../Enrich2-master
+cd Enrich2-master
 conda activate py2-dms
 python setup.py install # in DMS_v_2.1, fixed the setup.py bug in installing pytables
 
