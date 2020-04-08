@@ -20,15 +20,17 @@ from setuptools import setup, find_packages
 
 requirements = [
     'numpy >= 1.10.4',
-    'numpy <= 1.14.2',	
+    'numpy <= 1.14.2',
     'scipy >= 0.16.0',
     'scipy <= 1.0.0',
     'pandas >= 0.18.0',
     'pandas < 0.20',
     'statsmodels >= 0.6.1',
-    'statsmodels <=0.8.0',	
+    'statsmodels <=0.8.0',
     'matplotlib >= 1.4.3',
-    'matplotlib <= 2.2.0'
+    'matplotlib <= 2.2.0',
+    'pyparsing <=2.4.7',
+    'kiwisolver <=1.0.1'
 ]
 
 # workaround to deal with Enthought Canopy referring to the tables module
