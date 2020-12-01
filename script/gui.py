@@ -14,7 +14,7 @@ class App:
     def __init__(self, master):
         master.title("GUI wrapper")
         master.resizable(False, False)
-        master.geometry("520x620") # If using this, must import matplotlib
+        master.geometry("520x650") # If using this, must import matplotlib
         self.master = master
         self.Dict = dict({'wt_file_button': 'placeholder'})
 
